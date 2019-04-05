@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.168
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JaP_Tenis", "JaP_Tenis\JaP_Tenis.csproj", "{9337ECFD-76BB-4914-8D3D-6F073BFB1837}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9337ECFD-76BB-4914-8D3D-6F073BFB1837}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9337ECFD-76BB-4914-8D3D-6F073BFB1837}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9337ECFD-76BB-4914-8D3D-6F073BFB1837}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9337ECFD-76BB-4914-8D3D-6F073BFB1837}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F3E6443A-8099-4B93-9730-90423A8BB8D2}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,53 @@
+﻿@model JaP_Tenis.Models.Admin.CurtManagementModel
+
+@{
+	ViewData["Title"] = "Curt management";
+}
+<div class="row">
+	<div class="col-md-4">
+		<form asp-action="CurtManagement">
+			<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+			<div class="form-group">
+				<label asp-for="Name"></label>
+				<input asp-for="Name" class="form-control" />
+				<span asp-validation-for="Name" class="text-danger"></span>
+			</div>
+			<div class="form-group">
+				<input type="submit" value="Create" class="btn btn-secondary btn-sm" />
+			</div>
+		</form>
+	</div>
+	<div class="col-md-4 ml-md-4">
+		<table class="table table-light table-sm">
+			<thead class="thead-dark">
+			<tr>
+				<th>
+					Name
+				</th>
+				<th></th>
+			</tr>
+			</thead>
+			<tbody>
+			@foreach (var curt in Model.Curts)
+			{
+				<tr>
+					<td>
+						@curt.Name
+					</td>
+					<td>
+						@if (User.IsInRole("Admin"))
+						{
+
+							<a asp-action="DeleteCurt" asp-controller="Admin" asp-route-id="@curt.Id">Smazat</a>
+						}
+					</td>
+				</tr>
+			}
+			</tbody>
+		</table>
+	</div>
+</div>
+
+@section Scripts {
+	@{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
